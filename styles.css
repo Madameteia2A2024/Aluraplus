@@ -1,10 +1,10 @@
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
+    --botao-azul: #af0000;
+    --cor-de-fundo: #0f0000;
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3c92fa;
+    --botao-azul-efeito: #790000;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
@@ -26,6 +27,7 @@ body {
     align-items: center;
     text-align: center;
 }
+
 .container {
     height: 100vh;
     display: grid;
@@ -115,6 +117,11 @@ body {
     color: var(--branco-principal);
 }
 
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
 .rodape__lista {
     display: flex;
     justify-content: center;
@@ -134,16 +141,15 @@ body {
     font-size: 14px;
 }
 
-.rodape {
-    text-align: center;
-    margin: 5em 3em;
-}
-
 .lista__link a:hover {
     color: var(--botao-azul);
-    color: var(--cor-de-fundo);
 }
 
 .lista__link a:active {
     color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
